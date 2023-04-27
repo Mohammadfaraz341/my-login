@@ -1,6 +1,6 @@
 import React,{ useState} from "react";
 
-export const Login = () => {
+export const Login = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
@@ -20,7 +20,7 @@ export const Login = () => {
 
             <button type="submit">Log In</button>
         </form>
-        <button>Already have an acccount ? Rgeister here</button>
+        <button onClick={props.onF}> Dont have an acccount ? Rgeister here</button>
         </>
     )
 }
